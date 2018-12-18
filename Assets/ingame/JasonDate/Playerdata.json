@@ -1,0 +1,34 @@
+[
+ {
+   "Player": 1,
+   "Hp": 200,
+   "Speed": 6,
+   "Damege": 15,
+   "Cooltime": 0.2,
+   "SecondWeaponDamege": 5
+ },
+ {
+   "Player": 2,
+   "Hp": 240,
+   "Speed": 5,
+   "Damege": 20,
+   "Cooltime": 0.4,
+   "SecondWeaponDamege": 4
+ },
+ {
+   "Player": 3,
+   "Hp": 190,
+   "Speed": 6,
+   "Damege": 15,
+   "Cooltime": 0.2,
+   "SecondWeaponDamege": 6
+ },
+ {
+   "Player": 4,
+   "Hp": 200,
+   "Speed": 4,
+   "Damege": 25,
+   "Cooltime": 0.5,
+   "SecondWeaponDamege": 4
+ }
+]

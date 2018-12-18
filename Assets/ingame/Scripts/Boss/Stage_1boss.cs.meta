@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 18eef1a1c558fab40a941fb6045c814d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - BossbaseMovepos: {instanceID: 0}
+  - BossBullet: {fileID: 1592551145818670, guid: 4639e91092e35f647a3315f995e17343,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

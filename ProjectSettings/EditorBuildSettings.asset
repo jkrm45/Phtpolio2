@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Roding.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: e4aabf58527da4c4fa37e81c92ed4b44
+  - enabled: 1
+    path: Assets/Scenes/Stage1.unity
+    guid: a57345249cb4e6f4f8adb3f9caadf99c
+  - enabled: 1
+    path: Assets/Scenes/Stage2.unity
+    guid: 78ef0b83c48146b45be6483b155605bf
+  - enabled: 1
+    path: Assets/Scenes/Stage3.unity
+    guid: f7577bef920f44f49ae9c93208b85c7e
+  - enabled: 1
+    path: Assets/Scenes/Stage4.unity
+    guid: 3c45a38702c983a4ab889b338ee10613
+  - enabled: 1
+    path: Assets/Scenes/Stage5.unity
+    guid: 9586c97ce1c8e4b4496a865bee282b35
+  m_configObjects: {}

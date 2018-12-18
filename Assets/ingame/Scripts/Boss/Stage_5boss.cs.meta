@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 02557c8b3e86a774c8fe37e42d70e561
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - BossbaseMovepos: {instanceID: 0}
+  - BossBullet: {fileID: 1879663775438132, guid: 501977817724a8e4dac309226a8f85ef,
+      type: 2}
+  - BossBullet2: {fileID: 1627789181136492, guid: 0913007d67475cc4f9480ee7e8b6df76,
+      type: 2}
+  - sfirepos1: {instanceID: 0}
+  - sfirepos2: {instanceID: 0}
+  - firepos1: {instanceID: 0}
+  - firepos2: {instanceID: 0}
+  - firepos3: {instanceID: 0}
+  - firepos4: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

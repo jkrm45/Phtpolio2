@@ -1,0 +1,37 @@
+[
+ {
+   "Stage": 1,
+   "HP": 1000,
+   "Speed": 2,
+   "Cooltime": 1,
+   "SpecialAttackCooltime": 5
+ },
+ {
+   "Stage": 2,
+   "HP": 950,
+   "Speed": 1,
+   "Cooltime": 1.5,
+   "SpecialAttackCooltime": 6
+ },
+ {
+   "Stage": 3,
+   "HP": 1100,
+   "Speed": 2,
+   "Cooltime": 2,
+   "SpecialAttackCooltime": 5
+ },
+ {
+   "Stage": 4,
+   "HP": 1200,
+   "Speed": 2,
+   "Cooltime": 1.5,
+   "SpecialAttackCooltime": 4
+ },
+ {
+   "Stage": 5,
+   "HP": 1500,
+   "Speed": 3,
+   "Cooltime": 1.5,
+   "SpecialAttackCooltime": 5
+ }
+]

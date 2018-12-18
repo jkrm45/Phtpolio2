@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 9296fc6c68c919e4caaea9030bc21d6a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Taget: {instanceID: 0}
+  - Movepos1_1: {instanceID: 0}
+  - Movepos1_2: {instanceID: 0}
+  - Movepos1_3: {instanceID: 0}
+  - Movepos1_4: {instanceID: 0}
+  - bullet1: {fileID: 1269980612913050, guid: 37706853014fb3941ac942d4b2fddd3d, type: 2}
+  - bullet2: {fileID: 1271607145131410, guid: 520184a9aa60ee8468da91fdedd4c643, type: 2}
+  - bullet3: {fileID: 1209521264528898, guid: 425082e4225c9414f9248ce355034361, type: 2}
+  - firpos1: {instanceID: 0}
+  - firpos2: {instanceID: 0}
+  - firpos3: {instanceID: 0}
+  - firpos4: {instanceID: 0}
+  - firpos5: {instanceID: 0}
+  - itemLife: {fileID: 1657200477827156, guid: a824acc949df3134097bbe24be4d37fe, type: 2}
+  - itemSword: {fileID: 1984120272804302, guid: 1e77060d62d43584ab0f9258e85c741e,
+      type: 2}
+  - Effect: {fileID: 1804169624775726, guid: 141a2edccb7729843a82658932b92a7d, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
