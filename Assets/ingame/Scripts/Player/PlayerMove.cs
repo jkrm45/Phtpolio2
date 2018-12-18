@@ -4,7 +4,8 @@ using UnityEngine;
 using SimpleJSON;
 
 public class PlayerMove : MonoBehaviour {
-   
+
+    public UIJoystick back;
     public int Player;
     public int Hp;
     public GameObject Bullet;
@@ -45,7 +46,7 @@ public class PlayerMove : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
     }
     void Start () {
-       
+        back = FindObjectOfType<UIJoystick>();
         //Player = GameManeger.Instance.Player;
         ////var n = JSON.Parse(JasonDateScripts.Instance.Data1.text);
         ////Hp = (int)n[Player-1]["Hp"];
@@ -99,7 +100,8 @@ public class PlayerMove : MonoBehaviour {
     }
     void Move()
     {
-        
+
+        transform.Translate(back.position.x * Time.deltaTime * Speed/50, back.position.y * Time.deltaTime * Speed/50, 0, Space.World);
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(-Speed*Time.deltaTime, 0, 0);
