@@ -32,7 +32,7 @@ public class UiManerScripts : MonoBehaviour {
 	}
     void Roding()
     {
-        if (GameManeger.Instance.i >= 2)
+        if (GameManeger.Instance.i >= 2 /*&& GameManeger.Instance.i<=6 */)
         {
             Ui.SetActive(true);
         }

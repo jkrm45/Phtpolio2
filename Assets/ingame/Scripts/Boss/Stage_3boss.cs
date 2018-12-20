@@ -25,6 +25,7 @@ public class Stage_3boss : MonoBehaviour {
     public float cooladdtime;
     public GameObject Efeft;
     public GameObject[] Eeffet;
+    public bool Startboss = false;
     void Start()
     {
         //BossMeneger.Instance.Stage = Stage;
@@ -56,6 +57,7 @@ public class Stage_3boss : MonoBehaviour {
 
                 if (distance < 0.15)
                 {
+                    Startboss = true;
                     RandonMove();
                 }
                 break;
@@ -186,9 +188,12 @@ public class Stage_3boss : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Bullet")
+        if (Startboss == true)
         {
-            Hp = Hp - GameManeger.Instance.Damege;
+            if (collision.tag == "Bullet")
+            {
+                Hp = Hp - GameManeger.Instance.Damege;
+            }
         }
     }
     IEnumerator MakeProcess()

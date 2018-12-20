@@ -35,6 +35,7 @@ public class Stage_5boss : MonoBehaviour {
     public Transform firepos6;
     public GameObject Efeft;
     public GameObject[] Eeffet;
+    public bool Startboss = false;
 
 
     // Use this for initialization
@@ -86,6 +87,7 @@ public class Stage_5boss : MonoBehaviour {
 
                 if (distance < 0.15)
                 {
+                    Startboss = true;
                     RandonMove();
                 }
                 break;
@@ -211,9 +213,12 @@ public class Stage_5boss : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Bullet")
+        if (Startboss == true)
         {
-            Hp = Hp - GameManeger.Instance.Damege;
+            if (collision.tag == "Bullet")
+            {
+                Hp = Hp - GameManeger.Instance.Damege;
+            }
         }
     }
     IEnumerator MakeProcess()

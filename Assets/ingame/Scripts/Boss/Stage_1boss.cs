@@ -27,6 +27,7 @@ public class Stage_1boss : MonoBehaviour {
     public float cooladdtime;
     public GameObject Efeft;
     public GameObject[] Eeffet;
+    public bool Startboss = false;
 
     // Use this for initialization
     void Start () {
@@ -77,6 +78,7 @@ public class Stage_1boss : MonoBehaviour {
 
                 if (distance < 0.15)
                 {
+                    Startboss = true;
                     RandonMove();
                 }
                 break;
@@ -210,10 +212,14 @@ public class Stage_1boss : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Bullet")
+        if (Startboss == true)
         {
-            Hp = Hp - GameManeger.Instance.Damege;
+            if (collision.tag == "Bullet")
+            {
+                Hp = Hp - GameManeger.Instance.Damege;
+            }
         }
+    
     }
     IEnumerator MakeProcess()
     {

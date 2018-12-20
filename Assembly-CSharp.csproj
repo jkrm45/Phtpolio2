@@ -243,6 +243,7 @@
     <Compile Include="Assets\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
     <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
     <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
+    <Compile Include="Assets\GPGSIds.cs" />
     <Compile Include="Assets\ingame\Scripts\Boss\Boss3bullet.cs" />
     <Compile Include="Assets\ingame\Scripts\Boss\Boss4bullet.cs" />
     <Compile Include="Assets\ingame\Scripts\Boss\Boss5bullet.cs" />

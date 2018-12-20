@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Roding : MonoBehaviour {
-    public float time;
-    public float Aplv1time;
+    public float lordtime;
+    public float lordcool;
 	// Use this for initialization
 	void Start () {
 		
@@ -12,8 +12,8 @@ public class Roding : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        time =time+ Time.deltaTime;
-        if (time > Aplv1time)
+        lordtime = lordtime + Time.deltaTime;
+        if (lordtime > lordcool)
         {
             GameManeger.Instance.i = GameManeger.Instance.i + 1;
             Application.LoadLevel(GameManeger.Instance.i);

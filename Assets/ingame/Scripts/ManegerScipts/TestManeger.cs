@@ -17,7 +17,7 @@ public class TestManeger : MonoBehaviour {
 	void Update () {
         if (Input.GetKey(KeyCode.Escape))
         {
-            if (GameManeger.Instance.i <7)
+            if (GameManeger.Instance.i <6)
             {
                 GameManeger.Instance.i = GameManeger.Instance.i + 1;
             }

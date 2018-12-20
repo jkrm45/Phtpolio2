@@ -741,8 +741,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c29d9b0607e0941a8ce00dbcf5ea68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
-  Aplv1time: 0.5
+  lordtime: 0
+  lordcool: 3
 --- !u!1 &419487664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,7 +1610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data1: {fileID: 4900000, guid: 6737694fa611ce04b8d3c6450652e5ff, type: 3}
-  Data2: {fileID: 4900000, guid: 51a408a441c5fca4ab4999960dc5e6a8, type: 3}
+  Data2: {fileID: 4900000, guid: c5be8f2640b7a9e49ab3dc083900ce1c, type: 3}
   Data3: {fileID: 4900000, guid: 76ada30d75e849548a9f3a0e884158b8, type: 3}
 --- !u!1 &917124458
 GameObject:

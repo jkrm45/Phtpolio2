@@ -1,37 +1,37 @@
 [
  {
    "Stage": 1,
-   "HP": 1000,
+   "HP": 1500,
    "Speed": 2,
    "Cooltime": 1,
    "SpecialAttackCooltime": 5
  },
  {
    "Stage": 2,
-   "HP": 950,
+   "HP": 2000,
    "Speed": 1,
-   "Cooltime": 1.5,
+   "Cooltime": 0.5,
    "SpecialAttackCooltime": 6
  },
  {
    "Stage": 3,
-   "HP": 1100,
+   "HP": 2200,
    "Speed": 2,
    "Cooltime": 2,
    "SpecialAttackCooltime": 5
  },
  {
    "Stage": 4,
-   "HP": 1200,
+   "HP": 2500,
    "Speed": 2,
-   "Cooltime": 1.5,
+   "Cooltime": 2,
    "SpecialAttackCooltime": 4
  },
  {
    "Stage": 5,
-   "HP": 1500,
+   "HP": 3000,
    "Speed": 3,
    "Cooltime": 1.5,
-   "SpecialAttackCooltime": 5
+   "SpecialAttackCooltime": 3
  }
 ]
