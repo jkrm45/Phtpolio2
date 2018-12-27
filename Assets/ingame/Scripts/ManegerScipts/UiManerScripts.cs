@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 public class UiManerScripts : MonoBehaviour {
 
     private static UiManerScripts _instance = null;
@@ -29,7 +30,8 @@ public class UiManerScripts : MonoBehaviour {
 	void Update () {
         Adds();
         Roding();
-	}
+
+    }
     void Roding()
     {
         if (GameManeger.Instance.i >= 2 /*&& GameManeger.Instance.i<=6 */)
@@ -89,10 +91,12 @@ public class UiManerScripts : MonoBehaviour {
     }
     public void Sound()
     {
+        AudioManergerScripts.Instance.Playing = false;
         Ban.SetActive(true);
     }
     public void BanSound()
     {
+        AudioManergerScripts.Instance.Playing = true;
         Ban.SetActive(false);
     }
     public void No()
@@ -113,6 +117,6 @@ public class UiManerScripts : MonoBehaviour {
 
       
     }
-  
-   
+ 
+
 }

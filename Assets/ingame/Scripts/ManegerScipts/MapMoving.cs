@@ -9,10 +9,11 @@ public class MapMoving : MonoBehaviour {
     public GameObject map2;
     public GameObject map3;
     public GameObject map4;
+   
     // Use this for initialization
     void Start () {
-		
-	}
+        AudioManergerScripts.Instance.Audio.Play();
+    }
 	
 	// Update is called once per frame
 	void Update () {

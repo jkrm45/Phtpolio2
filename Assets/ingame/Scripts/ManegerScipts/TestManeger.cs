@@ -5,7 +5,7 @@ using UnityEngine;
 public class TestManeger : MonoBehaviour {
     private static TestManeger _instance = null;
     public static TestManeger Instance { get { return _instance; } }
-    public GameObject EnemyManeger;
+    
    
     // Use this for initialization
     void Start () {

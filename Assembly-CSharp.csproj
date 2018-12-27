@@ -277,6 +277,7 @@
     <Compile Include="Assets\ingame\Scripts\Player\ItemScirpts.cs" />
     <Compile Include="Assets\ingame\Scripts\Player\PlayerMove.cs" />
     <Compile Include="Assets\ingame\Scripts\Player\Print.cs" />
+    <Compile Include="Assets\ingame\Scripts\Player\ShildDestory.cs" />
     <Compile Include="Assets\JoYmove.cs" />
     <Compile Include="Assets\Login\LogCallback.cs" />
     <Compile Include="Assets\Login\LoginManager.cs" />
@@ -448,6 +449,7 @@
     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+    <None Include="Assets\BGM\Battle Music Album - 030718\Notes.txt" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />

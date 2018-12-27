@@ -5,6 +5,8 @@ using UnityEngine.Advertisements;
 
 public class UnityAdsHelper : MonoBehaviour
 {
+    public float Adcool = 200;
+    public float Adcooladd = 300;
     private const string android_game_id = "xxxxxxx";
     private const string ios_game_id = "xxxxxxx";
 
@@ -13,6 +15,10 @@ public class UnityAdsHelper : MonoBehaviour
     void Start()
     {
         Initialize();
+    }
+    void Update()
+    {
+        Adcooladd = Adcooladd + Time.deltaTime;
     }
 
     private void Initialize()
@@ -26,12 +32,24 @@ public class UnityAdsHelper : MonoBehaviour
 
     public void ShowRewardedAd()
     {
-        if (Advertisement.IsReady(rewarded_video_id))
+        UiManerScripts.Instance.Conttime = 10;
+        GameManeger.Instance.Lifecount = 3;
+        if (Adcooladd > Adcool)
         {
-            var options = new ShowOptions { resultCallback = HandleShowResult };
+            Adcooladd = 0;
+            if (Advertisement.IsReady(rewarded_video_id))
+            {
+                var options = new ShowOptions { resultCallback = HandleShowResult };
 
-            Advertisement.Show(rewarded_video_id, options);
+                Advertisement.Show(rewarded_video_id, options);
+            }
         }
+        //if (Advertisement.IsReady(rewarded_video_id))
+        //{
+        //    var options = new ShowOptions { resultCallback = HandleShowResult };
+
+        //    Advertisement.Show(rewarded_video_id, options);
+        //}
     }
 
     public void HandleShowResult(ShowResult result)
@@ -42,8 +60,8 @@ public class UnityAdsHelper : MonoBehaviour
                 {
                     Debug.Log("The ad was successfully shown.");
 
-                    UiManerScripts.Instance.Conttime = 10;
-                    GameManeger.Instance.Lifecount = 3;
+                    //UiManerScripts.Instance.Conttime = 10;
+                    //GameManeger.Instance.Lifecount = 3;
 
                     break;
                 }

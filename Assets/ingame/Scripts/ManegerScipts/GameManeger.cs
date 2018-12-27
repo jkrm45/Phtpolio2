@@ -31,6 +31,7 @@ public class GameManeger : MonoBehaviour {
     public GameObject chir4;
 
 
+
     // Use this for initialization
     void Awake () {
         _instance = this;

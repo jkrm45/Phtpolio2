@@ -16,7 +16,9 @@ public class Roding : MonoBehaviour {
         if (lordtime > lordcool)
         {
             GameManeger.Instance.i = GameManeger.Instance.i + 1;
+           
             Application.LoadLevel(GameManeger.Instance.i);
+          
         }
 	}
 }

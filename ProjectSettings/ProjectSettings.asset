@@ -154,7 +154,7 @@ PlayerSettings:
     Android: com.SSong.Photoproject
   buildNumber: {}
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 16
+  AndroidMinSdkVersion: 21
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -339,7 +339,7 @@ PlayerSettings:
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 886bb1d705739d7419fa8b2907f15451, type: 3}
+      - {fileID: 2800000, guid: 997768421e8ee7d4d84ff6582b229575, type: 3}
       m_Width: 96
       m_Height: 96
       m_Kind: 1

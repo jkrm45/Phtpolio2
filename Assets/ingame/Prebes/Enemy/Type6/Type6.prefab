@@ -139,6 +139,7 @@ MonoBehaviour:
   Type4shottime: 0
   itemLife: {fileID: 1657200477827156, guid: a824acc949df3134097bbe24be4d37fe, type: 2}
   itemSword: {fileID: 1984120272804302, guid: 1e77060d62d43584ab0f9258e85c741e, type: 2}
+  Effect: {fileID: 0}
   Enemtstate: 0
 --- !u!212 &212465446900868620
 SpriteRenderer:

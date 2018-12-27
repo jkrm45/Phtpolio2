@@ -1,65 +1,47 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GooglePlayGames;
+using GooglePlayGames.BasicApi;
+using UnityEngine.SocialPlatforms;
 
 public class MainBtmMeneger : MonoBehaviour {
 
     public GameObject Ban;
     public GameObject Chairchose;
     public GameObject play;
-    public GameObject chir;
-    public bool Left = false;
-    public bool Right = false;
+    public GameObject Soundpannel;
+    public GameObject Chair;
+
     public GameObject Check1;
     public GameObject Check2;
     public GameObject Check3;
     public GameObject Check4;
+    public GameObject rank;
+    public GameObject Exit;
+
+
+    //public const string leaderboard_1 = "CgkIgJDBp5IdEAIQAQ";
 
     // Use this for initialization
     void Start () {
         Time.timeScale = 1;
-	}
+  
+        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
+        PlayGamesPlatform.InitializeInstance(config);
+        PlayGamesPlatform.DebugLogEnabled = true;
+        PlayGamesPlatform.Activate();
+        AudioManergerScripts.Instance.Audio.Play();
+
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        Checking();
-        if (Left == true)
-        {
-            
-            chir.transform.Translate(0.5f * Time.deltaTime, 0, 0);
-            if (chir.transform.localPosition.x > -22.3)
-            {
-                chir.transform.localPosition = new Vector3(-22.3f, chir.transform.localPosition.y, 0);
-            }
-        }
-        if (Right == true)
-        {
-            if (chir.transform.localPosition.x < -430.3)
-            {
-                chir.transform.localPosition = new Vector3(-430.3f, chir.transform.localPosition.y, 0);
-            }
-            chir.transform.Translate(-0.5f * Time.deltaTime, 0, 0);
-        }
+       
+     
     }
-    void Checking()
-    {
-        if (Check1.activeSelf== true)
-        {
-            GameManeger.Instance.Player = 1;
-        }
-        if (Check2.activeSelf == true)
-        {
-            GameManeger.Instance.Player = 2;
-        }
-        if (Check3.activeSelf == true)
-        {
-            GameManeger.Instance.Player = 3;
-        }
-        if (Check4.activeSelf == true)
-        {
-            GameManeger.Instance.Player =4;
-        }
-    }
+    
 
     public void toplay()
     {
@@ -74,68 +56,108 @@ public class MainBtmMeneger : MonoBehaviour {
 
     public void Sound()
     {
+        AudioManergerScripts.Instance.Playing = false;
         Ban.SetActive(true);
     }
     public void UnSound()
     {
+        AudioManergerScripts.Instance.Playing = true;
         Ban.SetActive(false);
     }
 
     public void onchose()
     {
-
+     
         Chairchose.SetActive(true);
         play.GetComponent<BoxCollider>().enabled = false;
+        rank.GetComponent<BoxCollider>().enabled = false;
+        Ban.GetComponent<BoxCollider>().enabled = false;
+       Exit.GetComponent<BoxCollider>().enabled = false;
+       Soundpannel.GetComponent<BoxCollider>().enabled = false;
+        Chair.GetComponent<BoxCollider>().enabled = false;
+
     }
     public void offchose()
     {
         play.GetComponent<BoxCollider>().enabled = true;
+        rank.GetComponent<BoxCollider>().enabled = true;
+        Ban.GetComponent<BoxCollider>().enabled = true;
+        Exit.GetComponent<BoxCollider>().enabled = true;
+        Soundpannel.GetComponent<BoxCollider>().enabled = true;
+        Chair.GetComponent<BoxCollider>().enabled = true;
         Chairchose.SetActive(false);
     }
-    public void MovePre()
-    {
-        Left = true;
-    }
-    public void MovePre2()
-    {
-        Left = false;
-    }
-    public void MoveNext()
-    {
-
-        Right = true;
-    }
-    public void MoveNext2()
-    {
-
-        Right = false;
-    }
+  
     public void Chirck1()
     {
-        Check1.SetActive(true);
-        Check2.SetActive(false);
-        Check3.SetActive(false);
-        Check4.SetActive(false);
+        GameManeger.Instance.Player = 1;
+        Check1.GetComponent<UILabel>().text = "Selected";
+        Check2.GetComponent<UILabel>().text = "UnSelected";
+        Check3.GetComponent<UILabel>().text = "UnSelected";
+        Check4.GetComponent<UILabel>().text = "UnSelected";
     }
     public void Chirck2()
     {
-        Check1.SetActive(false);
-        Check2.SetActive(true);
-        Check3.SetActive(false);
-        Check4.SetActive(false);
+        GameManeger.Instance.Player = 2;
+        Check1.GetComponent<UILabel>().text = "UnSelected";
+        Check2.GetComponent<UILabel>().text = "Selected";
+        Check3.GetComponent<UILabel>().text = "UnSelected";
+        Check4.GetComponent<UILabel>().text = "UnSelected";
     }
     public void Chirck3()
     {
-        Check1.SetActive(false);
-        Check2.SetActive(false);
-        Check3.SetActive(true);
-        Check4.SetActive(false);
+        GameManeger.Instance.Player = 3;
+        Check1.GetComponent<UILabel>().text = "UnSelected";
+        Check2.GetComponent<UILabel>().text = "UnSelected";
+        Check3.GetComponent<UILabel>().text = "Selected";
+        Check4.GetComponent<UILabel>().text = "UnSelected";
     }
     public void Chirck4()
     {
-        Check1.SetActive(false);
-        Check2.SetActive(false);
-        Check3.SetActive(false);
-        Check4.SetActive(true);
+        GameManeger.Instance.Player =4;
+        Check1.GetComponent<UILabel>().text = "UnSelected";
+        Check2.GetComponent<UILabel>().text = "UnSelected";
+        Check3.GetComponent<UILabel>().text = "UnSelected";
+        Check4.GetComponent<UILabel>().text = "Selected";
+    }
+    public void Btnsinin()
+    {
+
+        //Social.localUser.Authenticate(success => { });
+        Social.localUser.Authenticate(success =>
+        {
+            if (true == success)
+            {
+
+                SenScore();
+                ShowUI();
+
+            }
+            else
+            {
+
+            }
+
+        });
+
+    }
+    #region
+    public void SenScore()
+    {
+        Social.ReportScore(PlayerPrefs.GetInt("BESTSCROE"), GPGSIds.leaderboard_1, success => { });
+       
+   
+         
+    }
+
+    public void ShowUI()
+    {
+        Social.ShowLeaderboardUI();
+    }
+    #endregion
+
+    public void Mute()
+    {
+
     }
 }

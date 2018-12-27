@@ -26,6 +26,10 @@ public class PlayerMove : MonoBehaviour {
     public bool SecondWeaponon1 = false;
     public bool SecondWeaponon2 = false;
     public bool playing = true;
+    public bool hit = false;
+    public GameObject shiled;
+    public float hitcool;
+    public float hitcooladd;
 
  
 
@@ -64,7 +68,20 @@ public class PlayerMove : MonoBehaviour {
     
         if (GameManeger.Instance.i >= 2)
         {
+            //gameObject.SetActive(true);
             Gameplay();
+        }
+        if (hit == true)
+        {
+            GameObject shiledd = Instantiate(shiled, transform.position, transform.rotation);
+            shiledd.transform.parent = gameObject.transform;
+            hitcooladd = hitcooladd + Time.deltaTime;
+            if (hitcooladd > hitcool)
+            {
+                hitcooladd = 0;
+                hit =false;
+            }
+             
         }
 
     }
@@ -143,6 +160,7 @@ public class PlayerMove : MonoBehaviour {
         SecTime = SecTime + Time.deltaTime;
         if (SecTime > Cooltime)
         {
+            
             GameObject Bull1 = Instantiate(Bullet, firePos1.position, firePos1.rotation) as GameObject;
             if (fire2 == true)
             {
@@ -243,67 +261,81 @@ public class PlayerMove : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (fire2 == false)
-        {
-            if (collision.tag == "itemsword")
-            {
-                fire2 = true;
 
-            }
-        }
-        else
-        {
-            if (fire3 == false)
+     
+            if (fire2 == false)
             {
                 if (collision.tag == "itemsword")
                 {
-                    fire3 = true;
+                    fire2 = true;
 
                 }
             }
             else
             {
-                if (SecondWeaponon1 == false)
+                if (fire3 == false)
                 {
                     if (collision.tag == "itemsword")
                     {
-                        SecondWeaponon1 = true;
+                        fire3 = true;
 
                     }
                 }
                 else
                 {
-                    if (SecondWeaponon2 == false)
+                    if (SecondWeaponon1 == false)
                     {
                         if (collision.tag == "itemsword")
                         {
-                            SecondWeaponon2 = true;
+                            SecondWeaponon1 = true;
 
+                        }
+                    }
+                    else
+                    {
+                        if (SecondWeaponon2 == false)
+                        {
+                            if (collision.tag == "itemsword")
+                            {
+                                SecondWeaponon2 = true;
+
+                            }
                         }
                     }
                 }
             }
-        }
 
-
-        if (fire2 == true)
+        if (hit == false)
         {
-            if (fire3 == true)
-            {
-                if (SecondWeaponon1 == true)
+           if (fire2 == true)
+           {
+                if (fire3 == true)
                 {
-                    if (SecondWeaponon2 == true)
+                    if (SecondWeaponon1 == true)
                     {
-                        if (collision.tag == "Enemy" || collision.tag == "EnemyBullet" || collision.tag == "Boss")
+                        if (SecondWeaponon2 == true)
                         {
-                            SecondWeaponon2 = false;
+                            if (collision.tag == "Enemy" || collision.tag == "EnemyBullet" || collision.tag == "Boss")
+                            {
+                                //hit = true;
+                                SecondWeaponon2 = false;
+                            }
+                        }
+                        else
+                        {
+                            if (collision.tag == "Enemy" || collision.tag == "EnemyBullet" || collision.tag == "Boss")
+                            {
+                                //hit = true;
+                                SecondWeaponon1 = false;
+                            }
                         }
                     }
                     else
                     {
                         if (collision.tag == "Enemy" || collision.tag == "EnemyBullet" || collision.tag == "Boss")
                         {
-                            SecondWeaponon1 = false;
+                            //hit = true;
+                            fire3 = false;
                         }
                     }
                 }
@@ -311,32 +343,124 @@ public class PlayerMove : MonoBehaviour {
                 {
                     if (collision.tag == "Enemy" || collision.tag == "EnemyBullet" || collision.tag == "Boss")
                     {
-                        fire3 = false;
+                        //hit = true;
+                        fire2 = false;
                     }
                 }
-            }
+
+           }
             else
             {
                 if (collision.tag == "Enemy" || collision.tag == "EnemyBullet" || collision.tag == "Boss")
                 {
-                    fire2 = false;
+                   
+                    transform.position = new Vector3(0, -5, 0);
+                    GameManeger.Instance.Lifecount = GameManeger.Instance.Lifecount - 1;
+                    hit = true;
+                    HitStart();
                 }
             }
-
-        }
-        else
-        {
-            if (collision.tag == "Enemy" || collision.tag == "EnemyBullet" || collision.tag == "Boss")
+            if (collision.tag == "itemlife")
             {
-                transform.position = new Vector3(0, -5, 0);
-                GameManeger.Instance.Lifecount = GameManeger.Instance.Lifecount - 1;
-                HitStart();
+                GameManeger.Instance.Lifecount = GameManeger.Instance.Lifecount + 1;
             }
+           
         }
-        if (collision.tag == "itemlife")
-        {
-            GameManeger.Instance.Lifecount = GameManeger.Instance.Lifecount + 1;
-        }
+        
+        //if (fire2 == false)
+        //{
+        //    if (collision.tag == "itemsword")
+        //    {
+        //        fire2 = true;
+
+        //    }
+        //}
+        //else
+        //{
+        //    if (fire3 == false)
+        //    {
+        //        if (collision.tag == "itemsword")
+        //        {
+        //            fire3 = true;
+
+        //        }
+        //    }
+        //    else
+        //    {
+        //        if (SecondWeaponon1 == false)
+        //        {
+        //            if (collision.tag == "itemsword")
+        //            {
+        //                SecondWeaponon1 = true;
+
+        //            }
+        //        }
+        //        else
+        //        {
+        //            if (SecondWeaponon2 == false)
+        //            {
+        //                if (collision.tag == "itemsword")
+        //                {
+        //                    SecondWeaponon2 = true;
+
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
+
+
+        //if (fire2 == true)
+        //{
+        //    if (fire3 == true)
+        //    {
+        //        if (SecondWeaponon1 == true)
+        //        {
+        //            if (SecondWeaponon2 == true)
+        //            {
+        //                if (collision.tag == "Enemy" || collision.tag == "EnemyBullet" || collision.tag == "Boss")
+        //                {
+        //                    SecondWeaponon2 = false;
+        //                }
+        //            }
+        //            else
+        //            {
+        //                if (collision.tag == "Enemy" || collision.tag == "EnemyBullet" || collision.tag == "Boss")
+        //                {
+        //                    SecondWeaponon1 = false;
+        //                }
+        //            }
+        //        }
+        //        else
+        //        {
+        //            if (collision.tag == "Enemy" || collision.tag == "EnemyBullet" || collision.tag == "Boss")
+        //            {
+        //                fire3 = false;
+        //            }
+        //        }
+        //    }
+        //    else
+        //    {
+        //        if (collision.tag == "Enemy" || collision.tag == "EnemyBullet" || collision.tag == "Boss")
+        //        {
+        //            fire2 = false;
+        //        }
+        //    }
+
+        //}
+        //else
+        //{
+        //    if (collision.tag == "Enemy" || collision.tag == "EnemyBullet" || collision.tag == "Boss")
+        //    {
+        //        transform.position = new Vector3(0, -5, 0);
+        //        GameManeger.Instance.Lifecount = GameManeger.Instance.Lifecount - 1;
+        //        HitStart();
+        //    }
+        //}
+        //if (collision.tag == "itemlife")
+        //{
+        //    GameManeger.Instance.Lifecount = GameManeger.Instance.Lifecount + 1;
+        //}
     }
     IEnumerator Hit(float time)
     {

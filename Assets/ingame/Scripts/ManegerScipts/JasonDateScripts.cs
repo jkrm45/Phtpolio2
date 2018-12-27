@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SimpleJSON; //SimpleJSON cs만들고 써야한다. 
-using GooglePlayGames;
-using GooglePlayGames.BasicApi;
-using UnityEngine.SocialPlatforms;
+
 
 
 public class JasonDateScripts : MonoBehaviour
@@ -41,18 +39,8 @@ public class JasonDateScripts : MonoBehaviour
 
   void Start()
   {
-        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
-        .EnableSavedGames()
-        .RequestEmail()
-
-        .RequestServerAuthCode(false)
-        .RequestIdToken()
-        .Build();
-        PlayGamesPlatform.InitializeInstance(config);
-        PlayGamesPlatform.DebugLogEnabled = true;
-        PlayGamesPlatform.Activate();
-
-        Btnsinin();
+      
+      
 
     }
 
@@ -62,22 +50,6 @@ public class JasonDateScripts : MonoBehaviour
       
     }
 
-    public void Btnsinin()
-    {
-     
-        Social.localUser.Authenticate((bool success) => {
-            if (success)
-            {
-             
-                GameManeger.Instance.i = GameManeger.Instance.i + 1;
-                Application.LoadLevel(GameManeger.Instance.i);
-            }
-            else
-            {
-
-            }
-        });
-    }
-    
   
+
 }

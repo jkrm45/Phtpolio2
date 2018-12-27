@@ -564,7 +564,7 @@ public class EnemyScript : MonoBehaviour {
             {
 
 
-                Destroy(gameObject);
+                Hp = Hp - GameManeger.Instance.Damege;
 
             }
         }
