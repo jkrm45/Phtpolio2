@@ -33,7 +33,7 @@ public class MainBtmMeneger : MonoBehaviour {
         PlayGamesPlatform.Activate();
         AudioManergerScripts.Instance.Audio.Play();
 
-
+        //Social.localUser.Authenticate(success => { });
     }
 	
 	// Update is called once per frame
@@ -135,7 +135,7 @@ public class MainBtmMeneger : MonoBehaviour {
             }
             else
             {
-
+                Application.Quit();
             }
 
         });
