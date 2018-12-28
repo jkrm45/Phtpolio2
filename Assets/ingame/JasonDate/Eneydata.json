@@ -1,0 +1,282 @@
+[
+ {
+   "Stage": 1,
+   "EnemyNo": "1_1",
+   "Speed": 2,
+   "Mesilespeed": 2,
+   "Cooltime": 1,
+   "Hp": 40,
+   "item": "x",
+   "type": "type1"
+ },
+ {
+   "Stage": 1,
+   "EnemyNo": "1_2",
+   "Speed": 4,
+   "Mesilespeed": 0,
+   "Cooltime": 0,
+   "Hp": 50,
+   "item": "x",
+   "type": "type2"
+ },
+ {
+   "Stage": 1,
+   "EnemyNo": "1_3",
+   "Speed": 2,
+   "Mesilespeed": 4,
+   "Cooltime": 3,
+   "Hp": 40,
+   "item": "x",
+   "type": "type3"
+ },
+ {
+   "Stage": 1,
+   "EnemyNo": "1_4",
+   "Speed": 2,
+   "Mesilespeed": 5,
+   "Cooltime": 4,
+   "Hp": 400,
+   "item": "Hp",
+   "type": "type4"
+ },
+ {
+   "Stage": 1,
+   "EnemyNo": "1_5",
+   "Speed": 0,
+   "Mesilespeed": 4,
+   "Cooltime": 2,
+   "Hp": 50,
+   "item": "x",
+   "type": "type5"
+ },
+ {
+   "Stage": 1,
+   "EnemyNo": "1_6",
+   "Speed": 2,
+   "Mesilespeed": 0,
+   "Cooltime": 0,
+   "Hp": 60,
+   "item": "Gun",
+   "type": "type6"
+ },
+ {
+   "Stage": 1,
+   "EnemyNo": "1_7",
+   "Speed": 1,
+   "Mesilespeed": 4,
+   "Cooltime": 2.5,
+   "Hp": 90,
+   "item": "x",
+   "type": "type7"
+ },
+ {
+   "Stage": 2,
+   "EnemyNo": "2_1",
+   "Speed": 2,
+   "Mesilespeed": 2,
+   "Cooltime": 1,
+   "Hp": 40,
+   "item": "x",
+   "type": "type1"
+ },
+ {
+   "Stage": 2,
+   "EnemyNo": "2_2",
+   "Speed": 4,
+   "Mesilespeed": 0,
+   "Cooltime": 0,
+   "Hp": 50,
+   "item": "x",
+   "type": "type2"
+ },
+ {
+   "Stage": 2,
+   "EnemyNo": "2_3",
+   "Speed": 2,
+   "Mesilespeed": 4,
+   "Cooltime": 3,
+   "Hp": 40,
+   "item": "x",
+   "type": "type3"
+ },
+ {
+   "Stage": 2,
+   "EnemyNo": "2_4",
+   "Speed": 2,
+   "Mesilespeed": 5,
+   "Cooltime": 4,
+   "Hp": 400,
+   "item": "Hp",
+   "type": "type4"
+ },
+ {
+   "Stage": 2,
+   "EnemyNo": "2_5",
+   "Speed": 0,
+   "Mesilespeed": 4,
+   "Cooltime": 2,
+   "Hp": 50,
+   "item": "x",
+   "type": "type5"
+ },
+ {
+   "Stage": 2,
+   "EnemyNo": "2_6",
+   "Speed": 2,
+   "Mesilespeed": 0,
+   "Cooltime": 0,
+   "Hp": 60,
+   "item": "Gun",
+   "type": "type6"
+ },
+ {
+   "Stage": 2,
+   "EnemyNo": "2_7",
+   "Speed": 1,
+   "Mesilespeed": 4,
+   "Cooltime": 2.5,
+   "Hp": 90,
+   "item": "x",
+   "type": "type7"
+ },
+ {
+   "Stage": 3,
+   "EnemyNo": "3_1",
+   "Speed": 2,
+   "Mesilespeed": 2,
+   "Cooltime": 1,
+   "Hp": 40,
+   "item": "x",
+   "type": "type1"
+ },
+ {
+   "Stage": 3,
+   "EnemyNo": "3_2",
+   "Speed": 4,
+   "Mesilespeed": 0,
+   "Cooltime": 0,
+   "Hp": 50,
+   "item": "x",
+   "type": "type2"
+ },
+ {
+   "Stage": 3,
+   "EnemyNo": "3_3",
+   "Speed": 2,
+   "Mesilespeed": 4,
+   "Cooltime": 3,
+   "Hp": 40,
+   "item": "x",
+   "type": "type3"
+ },
+ {
+   "Stage": 3,
+   "EnemyNo": "3_4",
+   "Speed": 2,
+   "Mesilespeed": 5,
+   "Cooltime": 4,
+   "Hp": 400,
+   "item": "Hp",
+   "type": "type4"
+ },
+ {
+   "Stage": 3,
+   "EnemyNo": "3_5",
+   "Speed": 0,
+   "Mesilespeed": 4,
+   "Cooltime": 2,
+   "Hp": 50,
+   "item": "x",
+   "type": "type5"
+ },
+ {
+   "Stage": 3,
+   "EnemyNo": "3_6",
+   "Speed": 2,
+   "Mesilespeed": 0,
+   "Cooltime": 0,
+   "Hp": 60,
+   "item": "Gun",
+   "type": "type6"
+ },
+ {
+   "Stage": 3,
+   "EnemyNo": "3_7",
+   "Speed": 1,
+   "Mesilespeed": 4,
+   "Cooltime": 2.5,
+   "Hp": 90,
+   "item": "x",
+   "type": "type7"
+ },
+ {
+   "Stage": 4,
+   "EnemyNo": "4_1",
+   "Speed": 2,
+   "Mesilespeed": 2,
+   "Cooltime": 1,
+   "Hp": 40,
+   "item": "x",
+   "type": "type1"
+ },
+ {
+   "Stage": 4,
+   "EnemyNo": "4_2",
+   "Speed": 4,
+   "Mesilespeed": 0,
+   "Cooltime": 0,
+   "Hp": 50,
+   "item": "x",
+   "type": "type2"
+ },
+ {
+   "Stage": 4,
+   "EnemyNo": "4_3",
+   "Speed": 2,
+   "Mesilespeed": 4,
+   "Cooltime": 3,
+   "Hp": 40,
+   "item": "x",
+   "type": "type3"
+ },
+ {
+   "Stage": 4,
+   "EnemyNo": "4_4",
+   "Speed": 2,
+   "Mesilespeed": 5,
+   "Cooltime": 4,
+   "Hp": 400,
+   "item": "Hp",
+   "type": "type4"
+ },
+ {
+   "Stage": 4,
+   "EnemyNo": "4_5",
+   "Speed": 0,
+   "Mesilespeed": 4,
+   "Cooltime": 2,
+   "Hp": 50,
+   "item": "x",
+   "type": "type5"
+ },
+ {
+   "Stage": 4,
+   "EnemyNo": "4_6",
+   "Speed": 2,
+   "Mesilespeed": 0,
+   "Cooltime": 0,
+   "Hp": 60,
+   "item": "Gun",
+   "type": "type6"
+ },
+ {
+   "Stage": 4,
+   "EnemyNo": "4_7",
+   "Speed": 1,
+   "Mesilespeed": 4,
+   "Cooltime": 2.5,
+   "Hp": 90,
+   "item": "x",
+   "type": "type7"
+ }
+]

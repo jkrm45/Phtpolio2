@@ -126,7 +126,7 @@ MonoBehaviour:
   foward: 0
   totaltime: 15
   totaladdtime: 0
-  time: 0
+  time: 2
   Movecool: 1
   bullet1: {fileID: 1269980612913050, guid: 37706853014fb3941ac942d4b2fddd3d, type: 2}
   bullet2: {fileID: 1271607145131410, guid: 520184a9aa60ee8468da91fdedd4c643, type: 2}

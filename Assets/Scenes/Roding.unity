@@ -1698,7 +1698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data1: {fileID: 4900000, guid: 6737694fa611ce04b8d3c6450652e5ff, type: 3}
-  Data2: {fileID: 4900000, guid: c5be8f2640b7a9e49ab3dc083900ce1c, type: 3}
+  Data2: {fileID: 4900000, guid: 4d8c680bcbc79ba4aa3da9b04c94d3b1, type: 3}
   Data3: {fileID: 4900000, guid: 76ada30d75e849548a9f3a0e884158b8, type: 3}
 --- !u!1 &917124458
 GameObject:
@@ -2473,7 +2473,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.48}
+  m_Size: {x: 0.13, y: 0.27}
   m_EdgeRadius: 0
 --- !u!212 &1080517775
 SpriteRenderer:
@@ -3225,7 +3225,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.34, y: 0.37}
+  m_Size: {x: 0.13, y: 0.27}
   m_EdgeRadius: 0
 --- !u!212 &1337052548
 SpriteRenderer:
@@ -3431,7 +3431,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.31, y: 0.3}
+  m_Size: {x: 0.13, y: 0.27}
   m_EdgeRadius: 0
 --- !u!212 &1420892629
 SpriteRenderer:
@@ -3884,7 +3884,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.31, y: 0.35}
+  m_Size: {x: 0.13, y: 0.27}
   m_EdgeRadius: 0
 --- !u!212 &1858381527
 SpriteRenderer:

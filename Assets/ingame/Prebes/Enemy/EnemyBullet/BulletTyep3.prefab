@@ -100,7 +100,7 @@ MonoBehaviour:
   type3: 1
   type4: 0
   type5: 0
-  Speed: 8
+  Speed: 4
   player: {fileID: 0}
   Type: type3
   Damege: 0
