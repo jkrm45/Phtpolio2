@@ -122,6 +122,7 @@ public class MainBtmMeneger : MonoBehaviour {
     }
     public void Btnsinin()
     {
+        print(PlayerPrefs.GetInt("BESTSCROE"));
 
         //Social.localUser.Authenticate(success => { });
         Social.localUser.Authenticate(success =>
