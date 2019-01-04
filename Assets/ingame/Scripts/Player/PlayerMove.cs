@@ -83,6 +83,14 @@ public class PlayerMove : MonoBehaviour {
             }
              
         }
+        if (GameManeger.Instance.i == 1)
+        {
+            SecondWeaponon1 = false;
+            SecondWeaponon2 = false;
+            fire2 = false;
+            fire3 = false;
+            transform.position = new Vector3(0, -3.65f, 0);
+        }
 
     }
     void Gameplay()
